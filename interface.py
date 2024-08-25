@@ -1,7 +1,6 @@
 import pygame as py
 from network import Neural_Net
 from rich import print
-from data import data_manager
 
 py.init()
 
@@ -60,9 +59,6 @@ def update_data():
 
 nn = Neural_Net()
 nn.load("nn_model.json")
-# test_data = data_manager('MNIST_CSV/mnist_test.csv')
-# score = nn.evaluate(test_data)
-# print(f"[blue]Initial Score: {score * 100}%")
 
 
 drawing = False
