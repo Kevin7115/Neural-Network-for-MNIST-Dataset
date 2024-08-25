@@ -56,7 +56,7 @@ def train_with_data(model: Neural_Net, training, test, epochs: int):
         if save == "y":
             model.save()
             break
-        elif save == "n":
+        if save == "n":
             break
 
 
