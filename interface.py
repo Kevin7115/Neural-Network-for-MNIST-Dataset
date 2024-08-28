@@ -60,7 +60,6 @@ def update_data():
 nn = Neural_Net()
 nn.load("nn_model.json")
 
-
 drawing = False
 while running:
     for event in py.event.get():

@@ -1,6 +1,6 @@
 import random
 import time
-# import numpy as np
+import numpy as np
 import random
 
 def dot_product(x, y):
@@ -118,6 +118,13 @@ class Matrix:
     def hadamard(self, other):
         return self.operations(other, hadamard=True)
 
+    def converter(self):
+        x = []
+        for row in self.vals:
+            for col in row:
+                x.append(col)
+        return x
+    
     def __str__(self):
         x = ""
         for i, row in enumerate(self.vals):
